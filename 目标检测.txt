@@ -1,0 +1,72 @@
+
+
+### 基础知识
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247488292&idx=1&sn=8fed98e1ae09e0c0fcd4b71ae7e9aa94&chksm=fc85f237cbf27b21925c8ce6d557a9ddd17b5070398159631916a916f7c7a1a5ef1b08265ede&mpshare=1 # 深度学习目标检测从入门到精通：第一篇
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247488333&idx=2&sn=db329535d3f6be79270080863abad298&chksm=fc85f25ecbf27b484732a0475f2251ca308236b457551184d4a14d2940e2dbe0c5b8482d8423&mpshare=1 # 使用SSD进行目标检测：目标检测第二篇
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650730940&idx=1&sn=2a6a8520176368d467ca87fbc2e04c66&chksm=871b35c2b06cbcd41593cf07aa5b7a7d0913f5d07de708fd554059b9f20f1b332190dd934025&mpshare=1 # 深度学习目标检测模型全面综述：Faster R-CNN、R-FCN和SSD
+
+### 库的介绍
+https://github.com/tensorflow/models/tree/master/research/object_detection # 谷歌开源tensorflow物体检测API
+http://blog.csdn.net/sinat_26917383/article/details/77825764 # ChainerCV︱堪比Opencv--深度学习工具库（Faster R-CNN、SSD 和 SegNet）
+https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html # 目标检测相关的论文和代码库集合
+
+### 如何训练object-detection模型（包含数据的转换）
+https://github.com/datitran/raccoon_dataset # 使用小型的数据集训练tensorflow的物体检测模型，以及如何显示有框框的图片
+http://www.atyun.com/4012_%E6%B5%A3%E7%86%8A%E6%A3%80%E6%B5%8B%E5%99%A8%E5%AE%9E%E4%BE%8B-%E5%A6%82%E4%BD%95%E7%94%A8tensorflow%E7%9A%84object-detector-api%E6%9D%A5%E8%AE%AD%E7%BB%83%E4%BD%A0%E7%9A%84%E7%89%A9%E4%BD%93.html # 浣熊检测器实例, 如何用TensorFlow的Object Detector API来训练你的物体检测器
+https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9 # 如何训练
+https://towardsdatascience.com/building-a-real-time-object-recognition-app-with-tensorflow-and-opencv-b7a2b4ebdc32
+https://towardsdatascience.com/how-to-train-a-tensorflow-face-object-detection-model-3599dcd0c26f # How to train a Tensorflow face object detection model
+https://towardsdatascience.com/building-a-toy-detector-with-tensorflow-object-detection-api-63c0fdf2ac95 # Building a Toy Detector with Tensorflow Object Detection API
+http://androidkt.com/train-object-detection/ # Train your Object Detection model locally with TensorFlow
+https://medium.com/@WuStangDan/step-by-step-tensorflow-object-detection-api-tutorial-part-4-training-the-model-68a9e5d5a333 # Step by Step TensorFlow Object Detection API Tutorial — Part 4: Training the Model
+https://lijiancheng0614.github.io/2017/08/22/2017_08_22_TensorFlow-Object-Detection-API/ # 使用TensorFlow Object Detection API进行物体检测
+https://www.jianshu.com/p/4ec080f709d8 # 【Tensorflow】Object Detection API-训练自己的模型
+
+
+https://pythonprogramming.net/training-custom-objects-tensorflow-object-detection-api-tutorial/Training Custom Object Detector - Tensorflow Object Detection API Tutorial
+https://medium.freecodecamp.org/tracking-the-millenium-falcon-with-tensorflow-c8c86419225e # Tracking the Millennium Falcon with TensorFlow
+
+
+### 如何使用object-detection
+https://github.com/tensorflow/models # tensorflow各种模型的训练，包括物体检测
+https://www.jiqizhixin.com/articles/2017-07-14-5 # 如何使用TensorFlow API构建视频物体识别系统
+http://blog.csdn.net/lijiancheng0614/article/details/77756252 # 使用TensorFlow Object Detection API进行图像物体检测
+https://lijiancheng0614.github.io/2017/08/22/2017_08_22_TensorFlow-Object-Detection-API/ # 使用TensorFlow Object Detection API进行物体检测
+http://blog.csdn.net/offbye/article/details/78369574 # Tensorflow物体检测（Object Detection）
+https://zhuanlan.zhihu.com/p/27469690 # 利用TensorFlow Object Detection API 训练自己的数据集
+http://blog.csdn.net/RobinTomps/article/details/78115628 # Windows下安装TensorFlow Object Detection API，训练自己的数据集
+https://www.jianshu.com/p/768ebebe93af # TensorFlow: Object Detection API
+
+### 如何安装object-detection
+https://medium.com/@rohitrpatil/how-to-use-tensorflow-object-detection-api-on-windows-102ec8097699 # window下的安装教程
+
+### 中文检测
+https://ctwdataset.github.io/
+
+
+### 视频检测
+http://buquati.com/blogs/google-tensorflow-object-detection-via-static-images-or-video/ # Google TensorFlow Object Detection via Static Images or Video
+http://buquati.com/blogs/google-tensorflow-object-detection-via-streaming-images-or-video/ # Google TensorFlow Object Detection via Streaming Images or Video
+
+### 将目标检测模型部署成serving
+https://medium.com/@KailaGaurav/deploying-object-detection-model-with-tensorflow-serving-7f12ee59b036 # Deploying Object Detection Model with TensorFlow Serving — Part 1
+https://medium.com/@KailaGaurav/deploying-object-detection-model-with-tensorflow-serving-part-2-55e6c638822e # Deploying Object Detection Model with TensorFlow Serving — Part 2
+https://stackoverflow.com/questions/45362726/how-to-properly-serve-an-object-detection-model-from-tensorflow-object-detection?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa # How to properly serve an object detection model from Tensorflow Object Detection API?
+https://medium.freecodecamp.org/how-to-deploy-an-object-detection-model-with-tensorflow-serving-d6436e65d1d9 # How to deploy an Object Detection Model with TensorFlow serving
+https://github.com/sozercan/tensorflow-object-detection # Operationalizing TensorFlow Object Detection on Azure
+https://github.com/tensorflow/models/issues/1988 # export as Savedmodel generating empty variables directory
+https://gist.github.com/dnlglsn/c42fbe71b448a11cd72041c5fcc08092 # Export a checkpointed object_detection model for serving with TensorFlow Serving
+
+### SSD开源实现
+https://github.com/balancap/SSD-Tensorflow # Single Shot MultiBox Detector in TensorFlow
+
+
+# 将目标检测通过Flask进行调用
+https://github.com/GoogleCloudPlatform/tensorflow-object-detection-example # TensorFlow Object Detection API demo
+https://github.com/phipleg/tensorflow-object-detector # Rudimentary flask web service that wraps the Tensorflow Object Detection API.
+https://github.com/tabet-f/Image2Recipes-using-Tensorflow-Object-Detection-API # A deployment of tensorflow object detection API using Flask
+https://github.com/VictorRancesCode/FlaskObjectDetection # Flask Object Detection - TensorFlow
+
+
+
+

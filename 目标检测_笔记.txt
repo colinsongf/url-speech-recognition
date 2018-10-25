@@ -1,0 +1,63 @@
+### 本地模型的配置文件（例如：ssd_mobilenet_v1_face.config）
+1、In this case, the number of “num_classes” remains one because only faces will be recognized.（num_classes: 1）
+
+2、The variable “fine_tune_checkpoint” is used to indicate the path to a previous model to get learning. This location will fit you in this file. The fine tune checkpoint file is used to apply transfer learning. Transfer learning is a method in Machine Learning that is focused on applying knowledge gained from one problem to another problem.
+fine_tune_checkpoint: "/data/git/tensorflow-face-object-detector-tutorial/data/ssd_mobilenet_v1_coco_11_06_2017/model.ckpt"
+
+3、In the class “train_input_reader”, a link is made with the TFRecord files for training the model. In the config file, you need to customize it to the correct location.
+train_input_reader: {
+  tf_record_input_reader {
+    input_path: "/data/git/tensorflow-face-object-detector-tutorial/data/train.record"
+  }
+  
+4、The variable “label_map_path” contains index IDs and names. With this file, zero is used as a placeholder, so we start with numbers from one.
+label_map_path: "/data/git/tensorflow-face-object-detector-tutorial/face_label.pbtxt"
+
+5、For validation, two variables are important. The variable “num_examples” within the class eval_config are used to set the number of examples.
+
+6、The “eval_input_reader” class describes the location of the validation data. There is also a path in this location.
+
+7、其他参数可以按照默认值
+
+
+### 训练代码
+$ python ~/tensorflow_models/object_detection/train.py --logtostderr --pipeline_config_path=ssd_mobilenet_v1_face.config  --train_dir=model_output
+
+python D:\models-master\research\object_detection\train.py --logtostderr --pipeline_config_path=D:\datastore\1802tianchi\ICPR_text_train_part1_20180211\ssd_mobilenet_v1_raccoon.config --train_dir=model_output
+
+python D:\models-master\research\object_detection\train.py --logtostderr --pipeline_config_path=D:\datastore\1802tianchi\ICPR_text_train_part1_20180211\ssd_mobilenet_v1_raccoon.config --train_dir=model_output
+
+python D:\models-master\research\object_detection\train.py --logtostderr --pipeline_config_path=D:\raccoon_dataset-master\training\ssd_mobilenet_v1_pets_my.config --train_dir=model_output
+
+python D:\models-master\research\object_detection\eval.py --logtostderr --pipeline_config_path=:\raccoon_dataset-master\training\ssd_mobilenet_v1_pets_my.config  --checkpoint_dir=d:\model_output --eval_dir=d:\eval
+
+python E:\软件备份\models-master\research\object_detection\train.py --logtostderr --pipeline_config_path=D:\datastore\test_object_detection\ssd_mobilenet_v1_pets.config --train_dir=D:\datastore\test_object_detection\model_output_100
+
+
+python D:\models-master\research\object_detection\export_inference_graph.py --input_type image_tensor --pipeline_config_path D:\datastore\test_object_detection\ssd_mobilenet_v1_pets.config  --trained_checkpoint_prefix D:\datastore\test_object_detection\model_output_100\model.ckpt-77 --output_directory D:\datastore\test_object_detection\graph
+
+### 启动tensorboard
+tensorboard --logdir=d:\model_output
+http://USER-20180223KO:6006
+
+### 启动notebook 
+#To run the Jupyter notebook, run the following command from tensorflow/models/research/object_detection:
+# From tensorflow/models/research/object_detection
+jupyter notebook
+
+
+### Recommended Directory Structure for Training and Evaluation
++data
+  -label_map file
+  -train TFRecord file
+  -eval TFRecord file
++models
+  + model
+    -pipeline config file
+    +train
+    +eval
+
+### Running Tensorboard
+Progress for training and eval jobs can be inspected using Tensorboard. If using the recommended directory structure, Tensorboard can be run using the following command:
+tensorboard --logdir=${PATH_TO_MODEL_DIRECTORY}
+where ${PATH_TO_MODEL_DIRECTORY} points to the directory that contains the train and eval directories. Please note it may take Tensorboard a couple minutes to populate with data.

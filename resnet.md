@@ -1,0 +1,8 @@
+1. [无需数学背景，读懂ResNet、Inception和Xception三大变革性架构](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650729930&idx=1&sn=5f81864de64075de1a460e622baea239&chksm=871b29b4b06ca0a23e2bef560abf09dad1b7d48d7b657cb2cd47f59573638be74278013ea913 )
+2. [slim关于resnet的实现](https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v1.py )
+3. [Residual networks implementation using Keras-1.0 functional API](https://github.com/raghakot/keras-resnet )
+4. ![架构图](https://raw.githubusercontent.com/raghakot/keras-resnet/master/images/architecture.png )
+5. [keras官方实现resnet50代码](https://github.com/fchollet/deep-learning-models/blob/master/resnet50.py )
+6. [【啄米日常】1：使用keras搭建残差网络](https://zhuanlan.zhihu.com/p/21586417 )
+7. [ResNext与Xception——对模型的新思考](https://zhuanlan.zhihu.com/p/28839889?utm_medium=social&utm_source=wechat_session )
+8. [干货 | 深度详解ResNet及其六大变体](https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247487949&idx=2&sn=e3d200c19243a5f111adf8a6c31f0e1b&chksm=e99d2234deeaab226000cead12f13ed682fd2012b25ad9caca5117f488f88d3e00104c17fc9e&mpshare=1 )

@@ -1,0 +1,43 @@
+https://blog.csdn.net/mao_xiao_feng/article/details/73409975 # 【Tensorflow】辅助工具篇——tensorflow slim(TF-Slim)介绍
+
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim # github关于slim的首页	
+
+https://blog.csdn.net/guvcolie/article/details/77686555 # tensorflow中slim模块api介绍（官网的翻译）
+
+https://www.jianshu.com/p/3af06422c768 ResNet原理及其在TF-Slim中的实现
+
+https://blog.csdn.net/m0_37041325/article/details/77930569 # 用tensorflow的slim模块快速实现mnist手写体识别分类
+
+https://kwotsin.github.io/tech/2017/02/11/transfer-learning.html # 使用slim进行迁移学习
+https://github.com/kwotsin/transfer_learning_tutorial # 上面文章的git页面
+
+https://blog.csdn.net/FontThrone/article/details/76652753 # 4.1 Tensorflow:卷积函数 如何计算卷积的参数
+
+https://blog.csdn.net/wayne2019/article/details/77884478 # TensorFLow 读取图片1：初探四种从文件读取的方式
+
+https://medium.com/@williamkoehrsen/facial-recognition-using-googles-convolutional-neural-network-5aa752b4240e # Facial Recognition Using Google’s Convolutional Neural Network
+
+https://blog.csdn.net/qq_25737169/article/details/79616671 # 使用tensorflow 的slim模块fine-tune resnet/densenet/inception网络，解决batchnorm问题
+
+https://blog.csdn.net/Cyiano/article/details/75006883 # Tensorflow slim库使用小记（避免BN的踩坑）
+
+https://blog.csdn.net/Wayne2019/article/details/78109357 # 使用tf-slim的inception_resnet_v2预训练模型进行图像分类 打印每个层的情况
+
+https://blog.csdn.net/Real_Myth/article/details/53414046 # 如何用TensorFlow和TF-Slim实现图像分类与分割
+
+https://cuiqingcai.com/5715.html # TensorFlow layers模块用法（各个函数的具体参数）
+
+https://vimsky.com/article/3675.html # 在TensorFlow中怎么打印Tensor对象的值
+
+https://www.tensorflow.org/programmers_guide/datasets # 官方中文文档（导入数据）
+
+https://blog.csdn.net/buptgshengod/article/details/72956846 # 十图详解TensorFlow数据读取机制（附代码）
+
+https://github.com/tensorflow/models/tree/master/research/slim # tensorflow预训练模型
+
+
+https://www.kaggle.com/ardiya/tensorflow-vgg-pretrained # 使用vgg预训练模型进行迁移学习
+
+https://gist.github.com/omoindrot/dedc857cdc0e680dfb1be99762990c9c/ # Example TensorFlow script for fine-tuning a VGG model (uses tf.contrib.data)
+
+https://stackoverflow.com/questions/38073432/how-to-suppress-verbose-tensorflow-logging?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa # 修改logging级别

@@ -1,0 +1,7 @@
+https://blog.csdn.net/hjimce/article/details/50098483
+https://blog.csdn.net/qq1483661204/article/details/79039702
+https://zhuanlan.zhihu.com/p/26074504
+https://github.com/dhwajraj/deep-siamese-text-similarity
+https://github.com/adambielski/siamese-triplet
+https://github.com/ardiya/siamesenetwork-tensorflow
+https://github.com/ywpkwon/siamese_tf_mnist

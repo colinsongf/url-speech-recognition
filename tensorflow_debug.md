@@ -1,0 +1,5 @@
+1. [A Practical Guide for Debugging TensorFlow Codes ](https://wookayin.github.io/tensorflow-talk-debugging/#1 )
+2. [Slides and supplementary codes for my talk 'Debugging Tips on TensorFlow' (2016)](https://github.com/wookayin/tensorflow-talk-debugging )
+3. [TensorFlow Debugger](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/docs_src/guide/debugger.md )
+4. [TensorFlow 调试程序](https://www.tensorflow.org/programmers_guide/debugger )
+5. [Debug TensorFlow Models with tfdbg](https://developers.googleblog.com/2017/02/debug-tensorflow-models-with-tfdbg.html )

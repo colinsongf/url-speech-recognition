@@ -1,0 +1,124 @@
+vgg19_cz_1024.ckpt
+
+netsh wlan set hostednetwork mode=allow ssid=mywifi3 key=12345678
+netsh wlan start hostednetwork
+
+192.168.28.197
+
+台大语音识别第四章（0321，44min）
+
+https://aicademy.org/notebook
+
+192.168.137.88        b8-27-eb-e2-66-ba     动态
+
+名称：gmccai
+
+密码：ai@gmcc123
+
+
+aplay  -D "plughw:1,0" mic.wav
+wifi管理员帐号：admin/123456789
+
+
+42228167 admin
+
+cat /etc/profile
+export http_proxy="http://10.245.132.126:808"
+export https_proxy="http://10.245.132.126:808"
+
+统配
+置文件/etc/wpa_supplicant/wpa_supplicant.conf
+
+您创建的产品基础信息如下：
+client_id：ug82LA5USsos9il8dPDQGVzY1lm4avt4
+client_secret：uPVoPFcIuE6odzQGIwCZaz0Oz9QtriKn
+OAUTH CONFIG URL：http://developer.baidu.com/console#app/14299601注意：请不要轻易改动
+
+21.143911063f56ef0b0984dfd788ba43d1.2592000.1540649239.3724997673-14299601
+http://bit.baidu.com/Course/detail/id/220.html
+
+
+[DuerOS开放平台 | 资源中心](https://developer.dueros.baidu.com/didp/doc/dueros-bot-platform/dbp-deploy/cfc-deploy.md )
+
+填写意图基本信息。意图中文名称“个税查询”和意图标识名“inquiry”，其中inquiry要与代码中的标识名保持一致。
+
+在DBP平台上填写个人所得税技能的配置信息。技能不使用回调功能，所以仅需填写BRN信息。
+
+
+使用真机测试，可以测试未上线的技能。
+
+真机测试：
+真机测试是在搭载了DuerOS系统的的语音设备、开发套件或APP等真实设备环境上进行测试。用于测试自己正在开发中的技能，同一时间只能支持一个技能的调试。
+
+ 
+方式：在平台开启真机测试开关，在真机设备上登录同一个百度账号，使用语音指令“打开技能调试模式”进入测试环境，即可在真机上测试技能。
+
+
+我试了  : sdk/dueros_core.py 中修改host_url到 'dueros-h2-dbp.baidu.com' 
+
+Python DuerOS SDK已经可以正常使用真机测试第三方技能了.
+
+surround21:CARD=ArrayUAC10,DEV=0
+    ReSpeaker 4 Mic Array (UAC1.0), USB Audio
+    2.1 Surround output to Front and Subwoofer speakers
+surround40:CARD=ArrayUAC10,DEV=0
+    ReSpeaker 4 Mic Array (UAC1.0), USB Audio
+    4.0 Surround output to Front and Rear speakers
+surround41:CARD=ArrayUAC10,DEV=0
+    ReSpeaker 4 Mic Array (UAC1.0), USB Audio
+    4.1 Surround output to Front, Rear and Subwoofer speakers
+surround50:CARD=ArrayUAC10,DEV=0
+    ReSpeaker 4 Mic Array (UAC1.0), USB Audio
+    5.0 Surround output to Front, Center and Rear speakers
+surround51:CARD=ArrayUAC10,DEV=0
+    ReSpeaker 4 Mic Array (UAC1.0), USB Audio
+    5.1 Surround output to Front, Center, Rear and Subwoofer speakers
+surround71:CARD=ArrayUAC10,DEV=0
+    ReSpeaker 4 Mic Array (UAC1.0), USB Audio
+    7.1 Surround output to Front, Center, Side, Rear and Woofer speakers
+
+    
+    
+Audio - 通过slink绑定，添加到slinks列表，开始录音后，将数据广播到slinks里面的每一个对象
+
+
+ a.get_device_info_by_index(2)
+{'maxOutputChannels': 2, 'defaultLowInputLatency': 0.0239375, 'hostApi': 0, 'defaultLowOutputLatency': 0.0239375, 'defaultHighOutputLatency': 0.096, 'name': 'ReSpeaker 4 Mic Array (UAC1.0): USB Audio (hw:1,0)', 'index': 2, 'maxInputChannels': 6, 'defaultSampleRate': 16000.0, 'structVersion': 2, 'defaultHighInputLatency': 0.096}
+
+
+q = Queue.Queue()
+with q.mutex:
+    q.queue.clear()    
+    
+    
+    
+2、工单类型：人工智能-理解与交互技术UNIT
+        3、工单特征描述：咨询与建议
+        4、工单标题：UNIT生产环境操作权限申请流程
+        5、工单描述：
+                企业名称（全称）：
+                行业：xxxx（请在下列行业中选择，教育培训/文化娱乐/视频直播/游戏/交通出行/电子商务/金融/零售/酒店旅游/企业服务/物流货运/生活服务/医疗健康/房产家装/商业地产/智能硬件/制造业/农业/法律政务/安防监控/软件工具/智能手机/其他）
+                BOT ID：xxx（例：100；您要申请生产环境的BOT/场景的ID；多个ID请用“；”分隔）
+                产品/项目名称（多个BOT请分别描述）：
+                应用业务场景描述（多个BOT请分别描述，需要详细描述业务场景与UNIT在业务中的价值）：
+                紧急联系人：
+                紧急联系电话：
+                
+                
+                ID	BOT名称	版本号	更新时间	沙盒状态	描述	 
+12782
+
+
+应用名称
+AppID
+API Key
+Secret Key
+包名
+业务查询bot
+14393400
+rhZwpGKWrGyA6bSCGjdqxVoO
+mHPam5b4GtgFKPITraiFxxzLU7S5ONuX 隐藏
+百度语音
+无 
+
+192.168.0.108

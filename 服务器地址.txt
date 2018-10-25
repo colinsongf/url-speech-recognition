@@ -1,0 +1,6 @@
+10.245.242.117 root ST.aigpu@2018 siaigpu staigpu
+
+10.245.242.116 aiaudit Gmcc_123
+ 
+10.245.132.178 stailb Gmcc_123 \ root ST.hadoop@2014 root
+	

@@ -1,0 +1,5 @@
+1. [【附源码】TensorFlow动态图（Eager模式）的那些神坑](https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247499563&idx=1&sn=a570373761bcd8f70bbc17aa60a05c93&chksm=fc861e38cbf1972ed57ee8bcd55028214dfe4feeaa5abca8d7ebf66b35a3b0f6e04b725cf435 )
+2. [终于！TensorFlow引入了动态图机制Eager Execution | 机器之心](https://www.jiqizhixin.com/articles/2017-11-01-12 )
+3. [入门 | TensorFlow的动态图工具Eager怎么用？这是一篇极简教程](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650743723&idx=2&sn=a95b53173df95f050e1655356505ef1f&chksm=871ae7d5b06d6ec37f0d8f04e0af9038fd800cfc70fcd196033a50cf6ccad31acb8ea68b10bd )
+4. [madalinabuzau/tensorflow-eager-tutorials: Simple tutorials for building neural networks with TensorFlow Eager mode.](https://github.com/madalinabuzau/tensorflow-eager-tutorials )
+5. [基于 Tensorflow eager 的文本生成，注意力，图像注释的完整代码](https://mp.weixin.qq.com/s?__biz=MjM5ODU3OTIyOA==&mid=2650672872&idx=2&sn=5e484c5809f29965e7832ff0f4887819&chksm=bec2339b89b5ba8daa430f02c8a3f9931ee889d9d1cbcceab4cb338b8a7a2558bb436954d578 )

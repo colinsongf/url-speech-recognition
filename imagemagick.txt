@@ -1,0 +1,9 @@
+http://www.imagemagick.org/Usage/crop/#trim # 相关的使用案例
+https://www.imagemagick.org/script/index.php # 官方主页
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#pythonmagick 下载mkl安装文件
+https://glenbambrick.com/2017/01/10/pdf-to-jpg-conversion-with-python-for-windows/ # pdf-to-jpg-conversion-with-python-for-windows/
+magick convert 0002.jpg -trim 2_trim.jpg # 切除白边的命令
+http://docs.wand-py.org/en/0.3.7/index.html # wand这个库的主页
+https://stackoverflow.com/questions/14134892/convert-image-from-pil-to-opencv-format # Convert image from PIL to openCV format
+https://stackoverflow.com/questions/37015966/how-to-convert-wand-image-object-to-open-cv-image-numpy-array # How to convert wand image object to open cv image (numpy array)
+https://stackoverflow.com/questions/11552926/how-to-read-raw-png-from-an-array-in-python-opencv # How to read raw png from an array in python opencv?

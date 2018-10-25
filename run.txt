@@ -1,0 +1,39 @@
+
+python3 models/research/object_detection/train.py --logtostderr --pipeline_config_path=models/data/class_5/ssd_mobilenet_v1_coco.config  --train_dir=models/data/class_5/train/
+
+python3 models/research/object_detection//eval.py --logtostderr --checkpoint_dir=models/data/class_5/train/ --pipeline_config_path=models/data/class_5/ssd_mobilenet_v1_coco.config --eval_dir=models/data/class_5/eval/
+
+python3 research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path=/data1/ai_check/models/data/class_5/ssd_mobilenet_v1_coco.config --trained_checkpoint_prefix=/data1/ai_check/models/data/class_5/train/train/train/model.ckpt-30000 --output_directory=/data1/ai_check/models/data/class_5/train/savedmodel
+
+tensorbod  --logdir=models/data/class_5
+
+
+0413版本
+python models/research/object_detection/train.py --logtostderr --pipeline_config_path=models/data/sign2_0413/ssd_mobilenet_v1_coco.config  --train_dir=models/data/sign2_0413/train/
+
+python models/research/object_detection//eval.py --logtostderr --checkpoint_dir=models/data/sign2_0413/train/ --pipeline_config_path=models/data/sign2_0413/ssd_mobilenet_v1_coco.config --eval_dir=models/data/sign2_0413/eval/
+
+python models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path=models/data/sign2_0413/ssd_mobilenet_v1_coco.config --trained_checkpoint_prefix=models/data/sign2_0413/train/model.ckpt-36552 --output_directory=models/data/sign2_0413/train/savedmodel
+
+tensorboard  --logdir=models/data/sign2_0413
+
+
+0416 训练sign3
+
+python models/research/object_detection/train.py --logtostderr --pipeline_config_path=models/data/sign3_0416/ssd_mobilenet_v1_coco.config  --train_dir=models/data/sign3_0416/train/
+
+python models/research/object_detection/eval.py --logtostderr --checkpoint_dir=models/data/sign3_0416/train/ --pipeline_config_path=models/data/sign3_0416/ssd_mobilenet_v1_coco.config --eval_dir=models/data/sign3_0416/eval/
+
+python models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path=models/data/sign3_0416/ssd_mobilenet_v1_coco.config --trained_checkpoint_prefix=models/data/sign3_0416/train/model.ckpt-62255 --output_directory=models/data/sign3_0416/train/savedmodel
+
+tensorboard  --logdir=models/data/sign3_0416
+
+
+
+生成数据
+python object_detection\dataset_tools\create_pascal_tf_record_VOC2007.py --data_dir=H:\DataStore\ai_check\model2\data\sign3_0412 --set=trainval --output_path=H:\DataStore\ai_check\model2\data\sign3_0412\sign3_trainval.record --label_map_path=H:\DataStore\ai_check\model2\data\sign3_0412\7_label_map.pbtxt
+
+
+python object_detection\dataset_tools\create_pascal_tf_record_VOC2007.py --data_dir=H:\DataStore\ai_check\model2\data\sign3_0412 --set=test --output_path=H:\DataStore\ai_check\model2\data\sign3_0412\sign3_test.record --label_map_path=H:\DataStore\ai_check\model2\data\sign3_0412\7_label_map.pbtxt
+
+python object_detection\dataset_tools\create_pascal_tf_record_VOC2007.py --data_dir=D:\sign3_0412 --set=test --output_path=D:\sign3_0412\sign3_test.record --label_map_path=D:\sign3_0412\7_label_map.pbtxt

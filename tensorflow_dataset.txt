@@ -1,0 +1,11 @@
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/how_tos/reading_data/fully_connected_reader.py # 读取mnist数据
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/mnist # mnist案例
+https://github.com/tensorflow/models/tree/master/tutorials/image/cifar10 # cifar10案例
+
+https://www.tensorflow.org/programmers_guide/datasets # Importing Data
+https://www.tensorflow.org/api_guides/python/reading_data#_QueueRunner_ # Reading data
+https://jhui.github.io/2017/11/21/TensorFlow-Importing-data/ # “TensorFlow - Importing data”
+
+
+
+https://zhuanlan.zhihu.com/p/26579417 # 使用Tensorflow把我们的数据转换成TFRecord格式

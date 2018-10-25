@@ -1,0 +1,29 @@
+1、找到kernel的配置json文件
+https://stackoverflow.com/questions/35094744/where-is-kernel-1234-json-located-in-jupyter-under-windows/35094772#35094772
+
+
+ipython qtconsole --existing c:\kernel-5296.json --ssh 7.177.136.117 
+
+Installing OpenSSH on Windows 7 # http://www.mcclellandlegge.com/2017-02-24-installsshd/
+
+Windows上SSH服务器的配置以及客户端的连接 # http://www.cnblogs.com/xred/archive/2012/04/21/2461627.html
+
+
+Unable to connect to remote IPython kernel on Linux from Windows # https://github.com/spyder-ide/spyder/issues/3323
+
+Windows to Windows SSH登录 # https://blog.csdn.net/flyingshuai/article/details/72897692
+
+https://github.com/PowerShell/openssh-portable
+
+Installing SFTP/SSH Server on Windows using OpenSSH # https://winscp.net/eng/docs/guide_windows_openssh_server
+
+
+SSH原理与运用（一）：远程登录 # http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+
+
+https://github.com/ipython/ipython/wiki/Cookbook:-Connecting-to-a-remote-kernel-via-ssh # Cookbook: Connecting to a remote kernel via ssh
+
+
+
+ipython qtconsole --existing f:\kernel-3912.json --ssh 7.177.136.117
+

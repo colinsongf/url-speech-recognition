@@ -1,0 +1,14 @@
+http://www.cnblogs.com/robert-dlut/p/6586621.html # 使用维基百科训练简体中文词向量，提供了词向量的权重及如何使用的脚本
+http://blog.csdn.net/thriving_fcl/article/details/53239856 # FastText 文本分类使用心得，对填写的地址进行分类的场景
+http://wulc.me/2016/10/12/%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E7%9A%84%E8%AF%8D%E5%90%91%E9%87%8F%E7%9A%84%E8%AE%AD%E7%BB%83/ # 中文维基百科语料库词向量的训练，代码讲的比较清楚，特别是LineSentence和模型的保存
+https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md # 官方90种语言的fasttext词向量
+https://www.jianshu.com/p/4cfcf1610a73 # Python做文本情感分析之情感极性分析
+https://www.jianshu.com/p/233da896226a # 利用Python实现中文情感极性分析
+http://www.datatang.com/data/44317 # 中文情感极性词典 NTUSD
+https://github.com/data-science-lab/sentimentCN # 存放情感词典的地址
+
+
+http://blog.csdn.net/sinat_26917383/article/details/54852214
+http://blog.csdn.net/chuchus/article/details/77771128
+http://blog.csdn.net/meyh0x5vDTk48P2/article/details/79055553
+http://blog.csdn.net/lxg0807/article/details/52960072	

@@ -1,0 +1,6 @@
+1. [A Python wrapper for Google Tesseract](https://github.com/madmaze/pytesseract )
+2. [Tesseract pytesseract的安装和使用 ](https://www.cnblogs.com/lilongsy/p/6373439.html )
+3. [pytesseract识别验证码教程](https://www.jianshu.com/p/b0b2a596ee36 )
+4. [【Tesseract-OCR】玩转OCR中文识别](https://blog.csdn.net/u013421629/article/details/76854778 )
+5. [Tesseract-OCR识别中文与训练字库实例](https://www.cnblogs.com/wzben/p/5930538.html )
+6. [Tesseract Open Source OCR Engine (main repository)](https://github.com/tesseract-ocr/tesseract )

@@ -1,0 +1,10 @@
+
+### 原理介绍
+https://zhuanlan.zhihu.com/p/24954433 # SSD
+http://blog.csdn.net/u014380165/article/details/72824889 #  SSD（single shot multibox detector）算法及Caffe代码详解
+http://blog.csdn.net/u010167269/article/details/52563573 # 论文阅读：SSD: Single Shot MultiBox Detector
+
+### 相关的代码库
+https://github.com/rykov8/ssd_keras # ssd结合keras，有训练和示范代码
+https://github.com/pierluigiferrari/ssd_keras#how-to-fine-tune-one-of-the-trained-models-on-your-own-dataset # 	A Keras port of Single Shot MultiBox Detector
+

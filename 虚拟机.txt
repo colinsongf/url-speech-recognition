@@ -1,0 +1,5 @@
+http://blog.csdn.net/m7548352/article/details/49497213 # WIN764位系统安装 Ubuntu14.04 VM虚拟机
+
+http://blog.csdn.net/wenyun_kang/article/details/77404805 # 虚拟机中Linux（Ubuntu16.04）与本地Win7共享文件夹
+
+http://blog.csdn.net/u012318074/article/details/77321522 # VMware 安装 Ubuntu 详细步骤

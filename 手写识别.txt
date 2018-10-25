@@ -1,0 +1,66 @@
+http://www.uustv.com/
+http://www.diyiziti.com/Builder/163
+
+https://www.ctolib.com/taosir-cnn_handwritten_chinese_recognition.html # CNN在线识别手写中文
+
+https://zhuanlan.zhihu.com/p/31326222 # TensorFlow 实现的中文手写汉字识别（论文，数据集，项目）
+
+https://zhuanlan.zhihu.com/p/24698483 # TensorFlow与中文手写汉字识别
+
+http://blog.topspeedsnail.com/archives/10897 # TensorFlow练习22: 手写汉字识别
+
+https://zhuanlan.zhihu.com/p/21344595 # 端到端的OCR：验证码识别
+
+http://blog.topspeedsnail.com/archives/10858 # TensorFlow练习20: 使用深度学习破解字符验证码
+
+http://www.nlpr.ia.ac.cn/databases/handwriting/Download.html # 手写数据库下载
+
+https://samaelchen.github.io/2017/04/13/deeplearning_mxnet_step1/ # CNN中文验证码识别
+
+http://blog.topspeedsnail.com/archives/10858 # TensorFlow练习20: 使用深度学习破解字符验证码
+
+https://github.com/AmemiyaYuko/HandwrittenChineseCharacterRecognition # Training a CNN on Tensorflow to recognize handwritten Chinese characters
+
+http://html.rhhz.net/ZDHXBZWB/html/2016-8-1125.htm # 深度学习在手写汉字识别中的应用综述
+
+https://juejin.im/entry/5a973d6a6fb9a0634418189d # tensorflow 实现端到端的OCR：二代身份证号识别
+
+https://cloud.tencent.com/developer/article/1005525 # 证件识别技术进化史
+
+https://www.tinymind.cn/articles/122?from=groupmessage&isappinstalled=0 # 【参赛经验】汉字书法识别入门
+
+http://ilovin.me/2017-04-06/tensorflow-lstm-ctc-ocr/ # tensorflow LSTM + CTC实现端到端OCR
+
+https://cloud.tencent.com/developer/article/1005545 # TensorFlow－1: 如何识别数字
+
+https://blog.csdn.net/c2a2o2/article/details/76152898 # Lesson 6.1 身份证识别: 提取字段
+
+http://chongdata.com/articles/?p=32 # Lesson 1: 如何做文本行和文字分割
+
+https://github.com/JinpengLI/deep_ocr
+
+https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python/ # Credit card OCR with OpenCV and Python
+
+http://www.cnblogs.com/qcloud1001/p/8081438.html # 深入浅出了解OCR识别票据原理
+
+https://github.com/isee15/Card-Ocr
+
+https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python/
+
+
+https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA%3D%3D&mid=2649739088&idx=1&sn=083f95cf6534ee5a65ef9225f6594b8a&scene=45#wechat_redirect # 数平精准推荐 | OCR技术之系统篇
+
+https://zhuanlan.zhihu.com/p/34579102 # 腾讯数平精准推荐 | OCR技术之检测篇
+
+https://zhuanlan.zhihu.com/p/34584411 # 腾讯数平精准推荐 | OCR技术之识别篇
+
+https://mp.weixin.qq.com/s?__biz=MzA3MDQ4MzQzMg==&mid=2665690891&idx=1&sn=20d5b12ec91960c07ece3c5a80ffdbf1&chksm=842bbb8cb35c329a014d83f1cf3ad137809abd01029d8b2be774c0a94b0040c0127ec3a06385 # 数平精准推荐 | OCR技术之数据篇
+
+
+
+from captcha.image import ImageCaptcha
+from PIL import Image
+data = ImageCaptcha(fonts=['fangzheng_heiti.TTF'], # 字体库的位置
+                    font_sizes=(60,60), 
+                    width=120,height=60).generate_image('张三')
+data.show()

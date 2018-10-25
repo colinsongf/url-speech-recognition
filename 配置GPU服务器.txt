@@ -1,0 +1,104 @@
+###　配置指导
+1、https://repo.continuum.io/archive/ # 浏览合适的anaconda的版本
+（1）curl -O https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+（2）最后一步会咨询是否要添加Anaconda到环境变量，需要键入yes，默认是no，不添加环境变量后续很麻烦
+（3）source ~/.bashrc # 让环境变量生效
+
+
+2、安装驱动（这个是针对P100的驱动，其他GPU显卡需要另外找）
+wget http://us.download.nvidia.com/tesla/375.66/nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
+http://www.nvidia.com/download/driverResults.aspx/118962/en-us # 这个是下载的源页面
+Once you accept the download please follow the steps listed below（需要root权限，先运行su root）
+（1） `dpkg -i nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb’ for Ubuntu 
+（2） `apt-get update`
+（3）`apt-get install cuda-drivers` 
+（4） `reboot` # 貌似可以不用
+
+3、安装驱动之后的额外动作
+（1）apt install aptitude
+（2）uname -a # 检测当前内核版本，然后确保对应版本的kernel-header包已经安装
+（3）aptitude search 4.4.0-105-generic
+（4）nvidia-smi # 检查驱动的安装情况
+
+4.1、安装cuda-8.0（针对tf1.6以下的，不推荐）
+（1）下载cuda-8.0
+https://developer.nvidia.com/cuda-80-ga2-download-archive # cuda-8.0的源页面
+wegt http://developer.download.nvidia.com/compute/cuda/8.0/secure/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb?O5tFZh65SvWd0aPrJtvu9Gx2i3TMmUUXnQ-8WtVflY0b8Ovy8au_31BTtuZLMPU5StSge0WV_RN2oWjHils0cNFbKTPfc0uqiXyMn5JMhHzweWUbdmilsVfC_jzdKjDzZRYbSnjtudI_jK-Ez_JuKFM7waowNxNoGnH3QtcUgNyKhuAEsllzLeEI6celg4yHd3zd4sZ5yVAXN-291jVHdsAx3g
+
+`sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb`
+`sudo apt-get update`
+`sudo apt-get install cuda`
+
+（2）下载cuda-8.0的补丁
+wget http://developer.download.nvidia.com/compute/cuda/8.0/secure/Prod2/patches/2/cuda-repo-ubuntu1604-8-0-local-cublas-performance-update_8.0.61-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-cublas-performance-update_8.0.61-1_amd64.deb
+sudo apt-get update  
+sudo apt-get upgrade cuda
+
+（3）编辑环境变量 vim ~/.bashrc
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export CUDA_HOME=/usr/local/cuda
+运行 source ~/.bashrc 使其生效
+
+4.2、安装cuda-9.0（针对tf1.6，是这次的安装版本）
+（1）下载文件
+http://developer.download.nvidia.com/compute/cuda/9.0/secure/rc/local_installers/cuda-repo-ubuntu1604-9-0-local-rc_9.0.103-1_amd64.deb
+http://developer.download.nvidia.com/compute/cuda/9.0/secure/rc/local_installers/cuda_9.0.103_384.59_linux.run
+（2）执行安装步骤
+sudo dpkg -i cuda-repo-ubuntu1704-9-0-local-rc_9.0.103-1_amd64.deb
+sudo apt-key add /var/cuda-repo-9-0-local-rc/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda
+
+5.1、安装cudnn6.0（针对cuda8.0，不推荐）
+（1）下载文件
+wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v6/prod/8.0_20170307/Ubuntu16_04_x64/libcudnn6_6.0.20-1+cuda8.0_amd64-deb
+（2）安装文件
+sudo dpkg -i libcudnn6_6.0.20-1+cuda8.0_amd64-deb 
+
+5.2、安装cudnn7.0（针对cuda9.0，推荐）
+下载cuDNN v7.0 (August 3, 2017), for CUDA 9.0 RC --- cuDNN v7.0 Library for Linux
+https://developer.nvidia.com/cudnn
+安装步骤
+tar -zxvf cudnn-9.0-linux-x64-v7.tgz
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/ -d
+sudo chmod a+r /usr/local/cuda/include/cudnn.h
+sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+
+6、关闭ubuntu自动更新内核及NVidia Tools
+（建议操作）
+
+ $ sudo vim /etc/apt/apt.conf.d/10periodic
+将 APT::Periodic::Update-Package-Lists "1"; 修改为 APT::Periodic::Update-Package-Lists "0"; 以禁止ubuntu自动更新软件包
+
+
+
+
+### 备忘
+（1）下载cudnn linux libray，但是没有成功
+https://developer.nvidia.com/rdp/cudnn-download
+http://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/v6/prod/8.0_20170427/cudnn-8.0-linux-x64-v6.0.tgz
+tar -zxvf cudnn-8.0-linux-x64-v6.0.tgz 
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64/ -d
+（2）通过国内的源安装python的库
+pip install -i http://pypi.douban.com/simple/ tensorflow-gpu=1.4 --trusted-host pypi.douban.com 
+pip install -i http://mirrors.aliyun.com/pypi/simple tensorflow-gpu==1.6 --trusted-host mirrors.aliyun.com
+（3）https://mobaxterm.mobatek.net/download.html
+（4）https://mirror.tuna.tsinghua.edu.cn/help/anaconda/ 替换国内的conda源
+（5）https://www.jianshu.com/p/ab93973286cc # Anacodna之conda与 virtualenv对比使用教程，创建虚拟环境
+（6）https://www.jianshu.com/p/78d8e526c6cb # Ubuntu安装软件的3种方法
+
+### 参考文献
+1、https://docs.ucloud.cn/ai/gpu/operation/ubuntu_cuda # ubuntu14 配置指导
+2、http://www.52nlp.cn/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AEubuntu-1080ti-cuda-cudnn # 从零开始搭建深度学习服务器: 基础环境配置（Ubuntu + GTX 1080 TI + CUDA + cuDNN）
+3、https://segmentfault.com/a/1190000008234390 # Ubuntu16.04 下安装GPU版TensorFlow（包括Cuda和Cudnn）
+4、http://blog.csdn.net/lixiaoguang20/article/details/53814020 # Ubuntu下设置环境变量及PATH的方法
+5、http://www.52nlp.cn/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-ubuntu17-04-nvidia-gtx-1080-cuda-9-0-cudnn-7-0-tensorflow-1-3 # 深度学习服务器环境配置: Ubuntu17.04+Nvidia GTX 1080+CUDA 9.0+cuDNN 7.0+TensorFlow 1.3
+4、http://www.52nlp.cn/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%9C%8D%E5%8A%A1%E5%99%A8-tensorflow-pytorch-torch # 从零开始搭建深度学习服务器: 深度学习工具安装（TensorFlow + PyTorch + Torch）
+5、https://hyunyoung2.github.io/2017/06/27/How_To_Install_Tensorflow/ # How to install TensorFlow installing tensorflow on ubuntu 16.04 LTS
+http://www.python36.com/install-tensorflow-using-official-pip-pacakage/
+https://gist.github.com/morgangiraud/990cf65dcb27068a4ca6b9db4957acc7
+https://zhuanlan.zhihu.com/p/24324720 # 替换阿里云的apt-unpdate源

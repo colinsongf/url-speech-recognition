@@ -1,0 +1,12 @@
+https://github.com/experiencor/basic-yolo-keras # 使用keras实现的简单的yolo版本
+http://blog.csdn.net/renhanchi/article/details/71077830 # 【Darknet】【yolo v2】训练自己数据集的一些心得----VOC格式
+https://pjreddie.com/darknet/yolo/ # 官方yolo网站
+http://blog.csdn.net/hysteric314/article/details/54097845 # 【YOLO学习】使用YOLO v2训练自己的数据 
+http://blog.csdn.net/sinat_30071459/article/details/51332084 # Faster-RCNN+ZF用自己的数据集训练模型(Python版本)
+http://www.cnblogs.com/louyihang-loves-baiyan/p/4903231.html # Fast RCNN训练自己的数据集 （2修改读写接口）
+http://www.cnblogs.com/louyihang-loves-baiyan/p/4885659.html?utm_source=tuicool&utm_medium=referral # FastRCNN 训练自己数据集 (1编译配置)
+https://github.com/rbgirshick/py-faster-rcnn # python 版本的fater-rcnn
+http://jacobkong.github.io/posts/464905881/ # 深度学习实践经验：用Faster R-CNN训练Caltech数据集——训练检测
+https://saicoco.github.io/object-detection-4/ # 目标检测--Faster RCNN2
+https://github.com/tzutalin/labelImg # voc图像标注工具
+http://python.jobbole.com/85223/ # Python-OpenCV 处理图像（六）：对象识别

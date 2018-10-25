@@ -1,0 +1,29 @@
+﻿http://blog.csdn.net/xqmoo8/article/details/7920080 # 双网卡代理服务器设置
+https://www.zhihu.com/question/20416900 # 如何使用双网卡上网？
+http://blog.sina.com.cn/s/blog_5cfcfe670100jooi.html # 笔记本双网卡实现双网合并，加速上网
+
+https://www.jianshu.com/p/711c14991a4f # Windows双网卡设置双网关
+
+https://segmentfault.com/a/1190000000683599 # 神器——Chrome开发者工具(一)
+http://blog.csdn.net/u013982161/article/details/54882643 # chrome和Firefox浏览器http抓包
+https://www.cnblogs.com/duhuo/p/5695256.html # Linux curl命令详解
+
+fiddler WFilter Proxifier freeswitch
+
+3、配置上网
+curl https://auth.st.gmcc.net/dana-na/auth/url_1/login.cgi -k -c ./cookie.txt -d "tz_offset=480&username=caiguochen&password=cgc0610#&realm=Portal帐号"
+curl https://auth.st.gmcc.net/dana/home/infranet.cgi -k -b ./cookie.txt
+代理：
+编辑profile文件
+export http_proxy=http://10.244.155.137:8081/
+export https_proxy=http://10.244.155.137:8081/
+还有个例外情况export no_proxy=\"10.*;*.gmcc.net;*.cmcc;127.0.0.1;mail.gd.chinamobile.com;*.local"
+
+
+curl -u caiguochen https://10.245.128.238/dana-na/auth/url_default/welcome.cgi
+
+curl -x http://10.244.155.137:8081 http://www.baidu.com
+curl https://auth.st.gmcc.net/dana-na/auth/url_1/login.cgi -k -c ./cookie.txt -d "tz_offset=480&username=caiguochen&password=cgc0610%23&realm=Portal%E5%B8%90%E5%8F%B7&btnSubmit=%E7%99%BB%E5%BD%95"
+curl https://auth.st.gmcc.net/dana/home/infranet.cgi -k -b ./cookie.txt
+
+tz_offset=480&username=caiguochen&password=cgc0610%23&realm=Portal%E5%B8%90%E5%8F%B7&btnSubmit=%E7%99%BB%E5%BD%95

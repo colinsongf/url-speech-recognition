@@ -1,0 +1,73 @@
+#### 整体概述
+1. [令人困惑的TensorFlow！-简单清晰，这是第一章，应该继续追踪](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650744619&idx=1&sn=499a1d1c4ed757e33b97a97e11654d34&chksm=871ae355b06d6a430d6bd173fb636a7bfaaee2a0cc7d28b77fa8952235551b28d29d2cd66089&mpshare=1 )
+
+
+
+### tensorflow概述
+http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650730434&idx=3&sn=859e3a298b00723a61186d20b4e031ec&chksm=871b2bbcb06ca2aa82d150dd23e7b913fff009bd273f03182613b801aaa13707319a8c96655d&mpshare=1 # 资源 | GitHub万星：适用于初学者的TensorFlow代码资源集
+https://www.jiqizhixin.com/articles/2018-02-07-3 # 教程那么多，你……看完了吗？
+
+### 整个流程
+http://cv-tricks.com/tensorflow-tutorial/training-convolutional-neural-network-for-image-classification/
+
+### tfrecord的介绍和使用
+http://ycszen.github.io/2016/08/17/TensorFlow%E9%AB%98%E6%95%88%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE/ # TensorFlow高效读取数据
+http://blog.csdn.net/jerr__y/article/details/78594684 # TensorFlow入门（十-I）tfrecord 固定维度数据读写
+http://blog.csdn.net/u012222949/article/details/72875281 # TFRecords 文件的生成和读取
+
+http://warmspringwinds.github.io/tensorflow/tf-slim/2016/12/21/tfrecords-guide/ # Tfrecords Guide
+http://www.machinelearninguru.com/deep_learning/tensorflow/basics/tfrecord/tfrecord.html # How to write into and read from a TFRecords file in TensorFlow
+http://blog.csdn.net/best_coder/article/details/70146441 # Tensorflow 训练自己的数据集（二）（TFRecord）
+http://blog.csdn.net/miaomiaoyuan/article/details/56865361 # TensorFlow 学习（二） 制作自己的TFRecord数据集，读取，显示及代码详解
+http://blog.csdn.net/jinbaosite/article/details/75194226 # 将图像转为TFRecord文件并读取TFRecord文件
+http://blog.csdn.net/u010358677/article/details/70544241 # Tensorflow中使用tfrecord方式读取数据
+
+
+
+### gfile的介绍和使用
+https://zhuanlan.zhihu.com/p/31536538 # tensorflow gfile文件操作详解
+
+
+### tensorflow图的概念
+https://zhuanlan.zhihu.com/p/27900670 # TensorFlow 学习笔记 - 基本概念
+https://zhuanlan.zhihu.com/p/32315232 # 进一步理解 TensorFlow 的 Graph 机制
+http://www.cnblogs.com/lienhua34/p/5998853.html # Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
+https://segmentfault.com/a/1190000011004398 # Tensorflow进阶笔记 --- #"1"#
+http://www.jeyzhang.com/tensorflow-learning-notes.html # TensorFlow学习笔记1：入门
+http://blog.csdn.net/dcrmg/article/details/79028003 # tensorflow中有向图（计算图、Graph）、上下文环境（Session）和执行流程
+http://blog.csdn.net/dcrmg/article/details/79028032 # tensorflow中创建多个计算图(Graph)
+http://blog.csdn.net/xierhacker/article/details/53860379 TensorFlow学习（三）：Graph和Session
+https://zhuanlan.zhihu.com/p/32315232 # 进一步理解 TensorFlow 的 Graph 机制
+
+### 常见问题
+https://stackoverflow.com/questions/48219442/use-tf-to-float-or-tf-image-convert-image-dtype-in-image-pipeline-for-cn/48249010#48249010?newreg=e216994d47a24985b8ac76c8235cb89b
+
+### 笔记
+tf.train.Coordinator 用于协同多个进程一起停止
+coord.request_stop() 通知其他函数停止
+with tf.device('/cpu:0'):
+
+str 与 byte 的转换 http://blog.csdn.net/lanchunhui/article/details/72681978
+
+### 模型作为服务
+
+https://www.tensorflow.org/serving/serving_basic # Serving a TensorFlow Model 
+
+###  中文文档
+
+https://www.w3cschool.cn/tensorflow_python/ 
+http://wiki.jikexueyuan.com/project/tensorflow-zh/
+http://www.tensorfly.cn/tfdoc/get_started/introduction.html
+
+
+### 使用tf.app.flags.FLAGS
+https://blog.csdn.net/lyc_yongcai/article/details/73456960 # TensorFlow 中 tf.app.flags.FLAGS 的用法介绍
+
+
+### 将keras转成tensorflow
+1、https://github.com/amir-abdi/keras_to_tensorflow # General code to convert a trained keras model into an inference tensorflow model
+2、https://github.com/keras-team/keras/issues/3223 # Convert Keras model to TensorFlow #3223
+
+
+#### tensorboard
+1. https://zhuanlan.zhihu.com/p/25323786?refer=c_76512067 # TensorFlow 图像数据预处理及可视化

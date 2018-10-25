@@ -1,0 +1,2 @@
+https://blog.csdn.net/jasonzzj/article/details/62237608 # 检测率，召回率，mAP，ROC
+http://huchaowei.com/2018/01/11/%E8%AF%A6%E8%A7%A3%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E4%BB%BB%E5%8A%A1%E4%B8%AD%E7%9A%84%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/ # 详解目标检测任务中的评价指标

@@ -1,0 +1,9 @@
+https://blog.csdn.net/fendouwhy/article/details/73245689  #  如何用pyinstaller将需要传参数的Python文件生成exe文件
+https://blog.csdn.net/zt_xcyk/article/details/73786659 # Python 3.6打包成EXE可执行程序
+https://www.microsoft.com/en-US/download/details.aspx?id=48145
+https://www.jianshu.com/p/af03e644b46b # 用conda创建python虚拟环境
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432712108300322c61f256c74803b43bfd65c6f8d0d0000 # virtualenv - 廖雪峰的官方网站
+https://blog.csdn.net/liuchunming033/article/details/46008301
+https://www.jianshu.com/p/44ab75fbaef2 # python 虚拟环境[virtualenv/virtualenvwrapper]设置
+
+datagen --dir d:\py2exe\a --desdir d:\py2exe\b

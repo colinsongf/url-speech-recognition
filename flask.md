@@ -1,0 +1,2 @@
+1. [Building your first Chat Application using Flask in 7 minutes](https://codeburst.io/building-your-first-chat-application-using-flask-in-7-minutes-f98de4adfa5d )
+2. [Build a Real-Time Chat Application With Modulus and Python](https://code.tutsplus.com/tutorials/build-a-real-time-chat-application-with-modulus-and-python--cms-24462 )

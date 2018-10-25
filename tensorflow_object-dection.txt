@@ -1,0 +1,38 @@
+### 如何运行eval
+1、安装Cython
+pip install Cython
+2、安装python3-tk
+https://stackoverflow.com/questions/6084416/tkinter-module-not-found-on-ubuntu
+3、安装pycocotools
+参考https://github.com/matterport/Mask_RCNN/issues/6
+git clone https://github.com/pdollar/coco.git
+cd coco/PythonAPI
+make
+sudo make install
+sudo python setup.py install
+4、如何查看eval的输出
+参考https://github.com/tensorflow/models/issues/2225
+5、存储eval的图片
+https://github.com/tensorflow/models/issues/2596
+eval_config {
+    visualization_export_dir: "/home/ubuntu/models-tf/research/notexist"
+...}
+
+6、评估模型的准确度
+http://cocodataset.org/#detections-eval
+
+https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocoEvalDemo.ipynb # demo
+http://cocodataset.org/#format # Results Format
+
+https://github.com/philferriere/cocoapi # 支持py3
+
+7、修改object_detection的train.py的参数
+（1）https://lijiancheng0614.github.io/2017/09/07/2017_09_07_TensorFlow-Object-Detection-API/ # 修改TensorFlow Object Detection API
+（2）https://stackoverflow.com/questions/46649917/defining-gpu-options-within-tensorflow-object-detection-api # Defining GPU options within Tensorflow Object Detection API
+
+
+8. [TensorFlow Object Detection API 多 GPU 卡平行計算，加速模型訓練速度教學](https://blog.gtwang.org/programming/tensorflow-object-detection-api-multiple-gpu-parallel-training/ )
+
+回头看系列：
+https://github.com/tylin/coco-caption 
+https://github.com/vsubhashini/caption-eval
