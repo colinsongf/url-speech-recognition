@@ -56,6 +56,7 @@
 
 #### 资源整合
 1. [资源 | 忘了Python关键语句？这份备忘录拯救你的记忆](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749623&idx=2&sn=c75401fc24e591da968367a146951eb4&chksm=871afec9b06d77dfe84e6221759449aa71d0c3d90888e71c059902b34ee3052e8b49731d7851&token=1266007737&lang=zh_CN#rd )
+2. [Python Cookbook 3rd Edition Documentation — python3-cookbook 3.0.0 文档](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html )
 
 
 #### 并行

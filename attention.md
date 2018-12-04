@@ -8,6 +8,7 @@
 7. [TensorFlow实现(十一)Attention机制 - 简书](https://www.jianshu.com/p/cc6407444a8c )
 8. [自然语言处理中的自注意力机制（Self-Attention Mechanism） - 知乎](https://zhuanlan.zhihu.com/p/35041012?utm_source=ZHShareTargetIDMore&utm_medium=social&utm_oi=28954110984192 )
 9. [深度 | 从各种注意力机制窥探深度学习在NLP中的神威](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749623&idx=3&sn=9732e1f78105b5d31e77a8fc646cd302&chksm=871afec9b06d77df39eb4fab21f43504fb8cad39a487b9fd7331239b34aa97f4faaa5bc68557 )
+10. [Attention? Attention!](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html )
 
 
 #### 代码实现
@@ -21,6 +22,9 @@
 8. [模型汇总24 - 深度学习中Attention Mechanism详细介绍：原理、分类及应用 - 知乎](https://zhuanlan.zhihu.com/p/31547842 )
 9. [基于TensorFlow框架的Seq2Seq英法机器翻译模型 - 知乎](https://zhuanlan.zhihu.com/p/37148308 )
 10. [deep_learning_NLP/HAN_final.ipynb at master · Tixierae/deep_learning_NLP](https://github.com/Tixierae/deep_learning_NLP/blob/master/HAN/HAN_final.ipynb )
+11. [google/seq2seq: A general-purpose encoder-decoder framework for Tensorflow](https://github.com/google/seq2seq )
+12. [MarcBS/keras: Keras' fork with several new functionalities. Caffe2Keras converter, multimodal layers, etc.](https://github.com/MarcBS/keras )
+13. [lvapeab/nmt-keras: Neural Machine Translation with Keras (Theano/Tensorflow)](https://github.com/lvapeab/nmt-keras )
 
 
 #### 语音识别
@@ -45,3 +49,9 @@
 4. [机器阅读理解基础篇-Attention Sum Reader - 知乎](https://zhuanlan.zhihu.com/p/37645722 )
 5. [阅读理解任务中的Attention-over-Attention神经网络模型原理及实现 - 呜呜哈的博客 - CSDN博客](https://blog.csdn.net/liuchonge/article/details/72848224 )
 6. [机器阅读理解模型Stanford Attentive Reader源码解析 - 知乎](https://zhuanlan.zhihu.com/p/36910707 )
+
+
+#### 文本分类
+1. [Text Classification, Part 3 - Hierarchical attention network – Richard's deep learning blog](https://richliao.github.io/supervised/classification/2016/12/26/textclassifier-HATN/ )
+2. [Kyubyong/transformer: A TensorFlow Implementation of the Transformer: Attention Is All You Need](https://github.com/Kyubyong/transformer )
+3. [Attention-based LSTM for Text Classification | Stay Hungry,Stay Foolish.](https://tobiaslee.top/2017/08/29/Attention-based-LSTM-for-Text-Classification/ )

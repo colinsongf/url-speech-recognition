@@ -83,6 +83,8 @@
 6. [途牛火车票查询](https://github.com/jokermonn/-Api/blob/master/TuniuTickets.md )
 7. [12306官方火车票Api接口](https://www.cnblogs.com/kdapi/p/6248028.html )
 8. [2018 视觉会话挑战赛开始报名！](https://mp.weixin.qq.com/s?__biz=MjM5ODU3OTIyOA==&mid=2650671630&idx=4&sn=a453807dc3cd726dd939e3f0caaa4d39&chksm=bec2377d89b5be6b73940e6562b36eb3860bfa069135f2d7bdf0361a689643df04d5132c0609&mpshare=1 )
+9. [ymcui/cmrc2018: The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC 2018)](https://github.com/ymcui/cmrc2018 )
+10. [ymcui/cmrc2017: The First Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC 2017)](https://github.com/ymcui/cmrc2017 )
 
 #### 理论实践
 1. [多轮对话之对话管理：Dialog Management](https://blog.csdn.net/c9Yv2cf9I06K2A9E/article/details/79070178 )

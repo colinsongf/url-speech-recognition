@@ -34,7 +34,7 @@ a 代表添加文件／文件夹到压缩包
 
 10. [linux sh: /bin/cp: Argument list too long 问题解决](http://noahsnail.com/2017/02/07/2017-2-7-Linux%E7%BB%9F%E8%AE%A1%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E6%95%B0%E7%9B%AE/ )
 
-11. 复制的文件太多导致参数溢出的问题(https://blog.csdn.net/enough_br/article/details/7595590 )
+11. [复制的文件太多导致参数溢出的问题](https://blog.csdn.net/enough_br/article/details/7595590 )[以及出现错误的解决](https://stackoverflow.com/questions/2961673/find-missing-argument-to-exec )
 ```
 sudo find 身份证第一批（0731）/4/Annotations/ -name "*.xml" -exec cp -r {} Annotations \;   
 ```
@@ -49,6 +49,18 @@ sudo find 身份证第一批（0731）/4/Annotations/ -name "*.xml" -exec cp -r 
 
 16. 批量复制前100个文件  ***find 13/*.jpg | head -n 10 | xargs -i cp {} ../upload_github_gmccai/img-class/13***
 或者 ***find  -name '*.xml'  | head -n 10 | xargs -i cp {} ../../upload_github_gmccai/sign-detect/Annotations/***
+
+17. [Ubuntu 文件操作 - 简书](https://www.jianshu.com/p/f64f2f245026 )
+
+18. [Linux统计文件夹下的文件数目 | SnailTyan](http://noahsnail.com/2017/02/07/2017-2-7-Linux%E7%BB%9F%E8%AE%A1%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E6%95%B0%E7%9B%AE/ )
+
+
+19. tar cvf  /data/img_class_Install_201810_Finsh/label_5.tar --files-from /data/img_class_Install_201810_Finsh/tmp.txt
+
+20. find  /data/img_class_Install_201810_Finsh/5/*.jpg -print | head -n 100 > /data/img_class_Install_201810_Finsh/tmp.txt 
+ 
+21. find */20181125_JPG -type d -maxdepth 0 查找文件夹，在第一层子目录
+
 
 df -hl 查看磁盘剩余空间
 

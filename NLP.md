@@ -26,6 +26,7 @@
 6. [Tensorflow implementations of Text Classification Models.](https://github.com/dongjun-Lee/text-classification-models-tf )
 7. [自然语言处理全家福：纵览当前NLP中的任务、数据、模型与论文](https://mp.weixin.qq.com/s/sQ903WNSR4v367t78_VG1Q )
 8. [sebastianGehrmann/diverse_ensembling](https://github.com/sebastianGehrmann/diverse_ensembling )
+9. [(译)吊炸天的中文自然语言处理工具和语料库介绍 - DataScience](https://mlln.cn/2018/06/02/[%E8%BD%AC]%E5%90%8A%E7%82%B8%E5%A4%A9%E7%9A%84%E4%B8%AD%E6%96%87%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7%E5%92%8C%E8%AF%AD%E6%96%99%E5%BA%93%E4%BB%8B%E7%BB%8D/#QA-amp-Chatbot-%E9%97%AE%E7%AD%94%E5%92%8C%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA )
 
 #### 中文分词
 
@@ -81,3 +82,13 @@
 
 #### embedding
 1. [神经网络词嵌入：如何将《战争与和平》表示成一个向量](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750397&idx=2&sn=319424d4288046a7b04ffa8387d0760c&chksm=871af9c3b06d70d53909886900fe2b24deecc111dcab1d489c7fc69d1b25f747b2e891b587fc)
+
+#### Elomo
+1. [流水账︱Elmo词向量中文训练过程杂记 - 素质云笔记/Recorder... - CSDN博客](https://blog.csdn.net/sinat_26917383/article/details/81913790 )
+
+#### BERT模型
+1. [NLP的游戏规则从此改写？从word2vec, ELMo到BERT - 知乎](https://zhuanlan.zhihu.com/p/47488095 )
+2. [用Pytorch实现谷歌最强NLP预训练模型BERT | 代码
+](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247506252&idx=2&sn=f886252179eec75b5a0dffb3999ef50a&chksm=e8d06e3edfa7e728d6e1d2dd8120209407aba4f025b2c14a587a8906cb367e286c2f4df0cccb )
+3. [自然语言处理中的语言模型预训练方法
+](https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492317&idx=1&sn=e823a75d9463257ed9ea7b3e4677c1ae&chksm=96ea3d5da19db44be0872ff4e29043aa72c7a624a116196bfeeca092a15f9209d7cf8ce46eb5 )
